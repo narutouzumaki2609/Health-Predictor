@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="../css/result.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+    <div id="google_translate_element"></div>
+      <script type="text/javascript">
+          function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                  {pageLanguage: 'en'},
+                  'google_translate_element'
+              );
+          }
+      </script>
+
+      <script type="text/javascript" src=
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+      </script>
+
+
+      <div class="heading">
+        <h1> Data Analysis </h1>
+      </div>
+
+
+      <div class="output">
+        
+        <h3> Disorders present are :  </h3>
+        <ul>
+        <% ans.forEach(result=>{ %>
+            <li><%= result %></li>
+            <br>
+        <% }) %>
+        </ul>
+      </div>
+
+      <div class="note border-style: dashed;">
+        <h4>Note: &nbsp&nbsp</h4>Recommended to visit the site after regular interval(1 month) for being updated!!
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
